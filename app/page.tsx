@@ -1,7 +1,9 @@
 'use client';
 
-import { useSearchParams, useRouter } from 'next/navigation';
+import type { JSX } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Header from './components/header';
+import Footer from './components/footer';
 
 // Contents
 const contents: Record<string, { title: string; body: JSX.Element }> = {
@@ -38,15 +40,11 @@ const contents: Record<string, { title: string; body: JSX.Element }> = {
 	},
 };
 
+// Page
 export default function Home() {
 	const searchParams = useSearchParams();
 	const type = searchParams.get('type') || 'welcome';
 	const content = contents[type as keyof typeof contents] || contents.welcome;
-	const router = useRouter();
-	// Go to Survey
-	const goToSurvey = () => {
-		router.push('/survey');
-	};
 	return(
 		<div id="container">
 			<Header />
@@ -56,10 +54,7 @@ export default function Home() {
 					<div>{content.body}</div>
 				</div>
 			</main>
-			<footer>
-				<div></div>
-				<div className={`right`}><button onClick={goToSurvey}>START NOW</button></div>
-			</footer>
+			<Footer />
 		</div>
 	);
 }

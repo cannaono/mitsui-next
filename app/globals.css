@@ -126,7 +126,7 @@ main div.block{
 }
 main h3{
 	margin: 0;
-	padding: 10px 5px;
+	padding: 6px 15px 6px 5px;
 	display: flex;
 	background-color: var(--color4);
 }
@@ -219,7 +219,7 @@ main.home a:hover{
 
 /* Admin */
 main.admin h3{
-	padding: 10px 20px;
+	padding: 7px 15px;
 }
 main.admin{
 	padding-bottom: 0;
