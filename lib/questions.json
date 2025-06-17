@@ -1,0 +1,1089 @@
+
+[
+{
+	"name": "q1",
+	"type": "radio",
+	"q_no": "1",
+	"question": "Which country group in the options below do you belong to?",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "London / Aberdeen / Dublin",
+			"num": 156,
+			"prev_num": 154
+		},
+		{
+			"no": "(2)",
+			"text": "Dusseldorf",
+			"num": 142,
+			"prev_num": 139
+		},
+		{
+			"no": "(3)",
+			"text": "Paris",
+			"num": 24,
+			"prev_num": 21
+		},
+		{
+			"no": "(4)",
+			"text": "Madrid",
+			"num": 18,
+			"prev_num": 18
+		},
+		{
+			"no": "(5)",
+			"text": "Milan",
+			"num": 45,
+			"prev_num": 46
+		},
+		{
+			"no": "(6)",
+			"text": "Oslo",
+			"num": 15,
+			"prev_num": 14
+		},
+		{
+			"no": "(7)",
+			"text": "Brussels",
+			"num": 31,
+			"prev_num": 32
+		},
+		{
+			"no": "(8)",
+			"text": "Tel Aviv",
+			"num": 7,
+			"prev_num": 7
+		},
+		{
+			"no": "(9)",
+			"text": "Istanbul",
+			"num": 18,
+			"prev_num": 18
+		},
+		{
+			"no": "(10)",
+			"text": "Warsaw / Prague / Budapest",
+			"num": 20,
+			"prev_num": 21
+		},
+		{
+			"no": "(11)",
+			"text": "Dubai / Abu Dhabi",
+			"num": 81,
+			"prev_num": 73
+		},
+		{
+			"no": "(12)",
+			"text": "Muscat / Doha",
+			"num": 12,
+			"prev_num": 12
+		},
+		{
+			"no": "(13)",
+			"text": "Cairo",
+			"num": 8,
+			"prev_num": 8
+		},
+		{
+			"no": "(14)",
+			"text": "Amman / Basra",
+			"num": 8,
+			"prev_num": 8
+		},
+		{
+			"no": "(15)",
+			"text": "Riyadh",
+			"num": 11,
+			"prev_num": 11
+		},
+		{
+			"no": "(16)",
+			"text": "Al-Khobar",
+			"num": 9,
+			"prev_num": 7
+		},
+		{
+			"no": "(17)",
+			"text": "Tehran",
+			"num": 6,
+			"prev_num": 8
+		},
+		{
+			"no": "(18)",
+			"text": "Kuwait / Bahrain",
+			"num": 4,
+			"prev_num": 5
+		},
+		{
+			"no": "(19)",
+			"text": "Casablanca",
+			"num": 7,
+			"prev_num": 6
+		},
+		{
+			"no": "(20)",
+			"text": "Accra / Nairobi / Maputo",
+			"num": 19,
+			"prev_num": 14
+		},
+		{
+			"no": "(21)",
+			"text": "Johannesburg",
+			"num": 22,
+			"prev_num": 19
+		}
+	]
+},
+{
+	"name": "q1a",
+	"type": "radio",
+	"q_no": "1-1",
+	"class": "long",
+	"question": "What is your grade?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Grade 1 to 4 (or equivalent)"
+		},
+		{
+			"no": "b)",
+			"text": "Grade 5, M2 or above (or equivalent)"
+		},
+		{
+			"no": "c)",
+			"text": "I prefer not to say"
+		}
+	]
+},
+{
+	"name": "q2",
+	"type": "radio",
+	"q_no": "2",
+	"prev_name": "q3",
+	"question": "Do you have a good understanding of the “With Integrity” Mitsui & Co. Group Conduct Guidelines?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q3",
+	"type": "radio",
+	"q_no": "3",
+	"prev_name": "q4",
+	"question": "Do you have a good understanding of “Act with integrity” as part of Corporate Mission Vision Values?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q4",
+	"type": "radio",
+	"q_no": "4",
+	"prev_name": "q5",
+	"question": "Do you have a good understanding of “Build an organization with integrity” as one of Mitsui & Co.’s Materiality?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q5",
+	"type": "radio",
+	"q_no": "5",
+	"prev_name": "q2",
+	"question": "Do you have a good understanding of the Mitsui Business Conduct Guidelines applicable to your Bloc?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q6",
+	"type": "radio",
+	"q_no": "6",
+	"class": "short",
+	"question": "On scale of 1-5 (with 1 being least aware and 5 being fully aware), how do you rate your understanding level of the internal rules (including the Business Conduct Guidelines in your Bloc) which apply to your work?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "1"
+		},
+		{
+			"no": "b)",
+			"text": "2"
+		},
+		{
+			"no": "c)",
+			"text": "3"
+		},
+		{
+			"no": "d)",
+			"text": "4"
+		},
+		{
+			"no": "e)",
+			"text": "5"
+		}
+	]
+},
+{
+	"name": "q7",
+	"type": "radio",
+	"q_no": "7",
+	"class": "short",
+	"question": "On scale of 1-5 (with 1 being least aware and 5 being fully aware), how do you rate your understanding level of the laws and regulations which apply to your work?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "1"
+		},
+		{
+			"no": "b)",
+			"text": "2"
+		},
+		{
+			"no": "c)",
+			"text": "3"
+		},
+		{
+			"no": "d)",
+			"text": "4"
+		},
+		{
+			"no": "e)",
+			"text": "5"
+		}
+	]
+},
+{
+	"name": "q8",
+	"type": "radio",
+	"q_no": "8",
+	"question": "Do you know who you can consult with if you are not sure the relevant internal rules apply to your work?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q9",
+	"type": "radio",
+	"q_no": "9",
+	"prev_name": "q14",
+	"question": "Do you know who you can contact if you have any compliance/integrity-related concerns?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q10",
+	"type": "radio",
+	"q_no": "10",
+	"prev_name": "q6",
+	"question": "Do you agree or disagree with the following statement:<q>My office is open and communicative. It is easy to exchange honest opinions, report bad or non-positive news, or ask for help on any matter.</q>",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Agree"
+		},
+		{
+			"no": "b)",
+			"text": "Mostly agree"
+		},
+		{
+			"no": "c)",
+			"text": "Mostly disagree"
+		},
+		{
+			"no": "d)",
+			"text": "Disagree"
+		}
+	]
+},
+{
+	"name": "q10a",
+	"type": "checkbox",
+	"q_no": "10A",
+	"prev_name": "q6a",
+	"class": "full",
+	"question": "If you chose “Mostly disagree” or “Disagree” in question 10, why do you think your office is not open and communicative? Please choose one or more answers from the following options.",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "My manager and the colleagues in the office in general are too busy."
+		},
+		{
+			"no": "(2)",
+			"text": "My manager does not appear ready to listen to free opinions or be consulted."
+		},
+		{
+			"no": "(3)",
+			"text": "My manager does not respond to other’s opinions or consultations.",
+			"prev": ""
+		},
+		{
+			"no": "(4)",
+			"text": "The overall office atmosphere makes me feel unsafe to freely exchange opinions or consult with someone else.",
+			"prev": "3"
+		},
+		{
+			"no": "(5)",
+			"text": "Other (please provide a written explanation)",
+			"prev": "4"
+		}
+	],
+	"addional_textarea": {
+		"name": "q10at"
+	}
+},
+{
+	"name": "q11",
+	"type": "radio",
+	"q_no": "11",
+	"prev_name": "q7",
+	"question": "Do you agree or disagree with the following statement:<q>The environment in my office is supportive of an open atmosphere where mutual respect among each individual is highly valued?</q>",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Agree"
+		},
+		{
+			"no": "b)",
+			"text": "Mostly agree"
+		},
+		{
+			"no": "c)",
+			"text": "Mostly disagree"
+		},
+		{
+			"no": "d)",
+			"text": "Disagree"
+		}
+	]
+},
+{
+	"name": "q12",
+	"type": "radio",
+	"q_no": "12",
+	"prev_name": "q8",
+	"question": "Do you agree or disagree with the following statement:<q>Integrity and compliance are valued in my office in addition to work performance?</q>",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Agree"
+		},
+		{
+			"no": "b)",
+			"text": "Mostly agree"
+		},
+		{
+			"no": "c)",
+			"text": "Mostly disagree"
+		},
+		{
+			"no": "d)",
+			"text": "Disagree"
+		}
+	]
+},
+{
+	"name": "q13_1",
+	"type": "radio",
+	"q_no": "13-1",
+	"prev_name": "q9",
+	"question": "Do you agree or disagree with the following statement:<q>My manager supports a culture of integrity and compliance in my office. For example, by sharing his/her own thoughts and experiences or providing the opportunity to talk about the importance of integrity and compliance.</q>",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Agree",
+			"prev": "1"
+		},
+		{
+			"no": "b)",
+			"text": "Mostly agree",
+			"prev": ""
+		},
+		{
+			"no": "c)",
+			"text": "Mostly disagree",
+			"prev": "2"
+		},
+		{
+			"no": "d)",
+			"text": "Disagree",
+			"prev": ""
+		}
+	]
+},
+{
+	"name": "q13_2",
+	"type": "radio",
+	"q_no": "13-2",
+	"question": "Do you agree or disagree with the following statement:<q>The senior management in my Bloc supports a culture of integrity and compliance. For example, they share their thoughts and experiences in their own words, and give everyone a chance to talk about the importance of Integrity and Compliance.</q>",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Agree"
+		},
+		{
+			"no": "b)",
+			"text": "Mostly agree"
+		},
+		{
+			"no": "c)",
+			"text": "Mostly disagree"
+		},
+		{
+			"no": "d)",
+			"text": "Disagree"
+		}
+	]
+},
+{
+	"name": "q14",
+	"type": "radio",
+	"q_no": "14",
+	"prev_name": "q10",
+	"class": "full",
+	"with_no": true,
+	"question": "<u>During the past one year,</u> have you received any request from customers or other parties that you believe was a breach of our Business Conduct Guidelines or our internal rules, or had a risk of leading to such breach? IF SO, were you able to refuse such requests?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "I have not received such requests"
+		},
+		{
+			"no": "b)",
+			"text": "I received such requests but refused them."
+		},
+		{
+			"no": "c)",
+			"text": "I received such requests but was unable to refuse them and accepted such requests."
+		}
+	]
+},
+{
+	"name": "q14a",
+	"type": "radio",
+	"q_no": "14A",
+	"prev_name": "q10a",
+	"class": "full",
+	"question": "If you chose (b) or (c) in response to the question 14, what was your manager’s response when you received such requests?",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "My manager told me to refuse the requests and supported me to refuse such requests."
+		},
+		{
+			"no": "(2)",
+			"text": "My manager told me to refuse the requests but did not support me to refuse such requests."
+		},
+		{
+			"no": "(3)",
+			"text": "My manager told me to accept such requests."
+		},
+		{
+			"no": "(4)",
+			"text": "My manager made no decision whatsoever regarding such requests and gave no instructions."
+		},
+		{
+			"no": "(5)",
+			"text": "I did not consult with my manager and made the decision on my own."
+		}
+	]
+},
+{
+	"name": "q15",
+	"type": "checkbox",
+	"q_no": "15",
+	"prev_name": "q17b",
+	"class": "full",
+	"question": "<u>During the past one year,</u> do you think there have been or might have been integrity and/or compliance-related problems in your office?<br>Please choose one or more answers from the following options.",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "Unpaid overtime",
+			"prev": "q17b_1"
+		},
+		{
+			"no": "(2)",
+			"text": "Sexual harassment",
+			"prev": "q17b_2"
+		},
+		{
+			"no": "(3)",
+			"text": "Power harassment or bullying",
+			"prev": "q17b_3"
+		},
+		{
+			"no": "(4)",
+			"text": "Issues related to discrimination (e.g., gender, sexuality, disability, ethnicity, nationality)",
+			"prev": ""
+		},
+		{
+			"no": "(5)",
+			"text": "Other issues related to the office environment",
+			"prev": "q17b_4"
+		},
+		{
+			"no": "(6)",
+			"text": "Issues related to cartels or bid-rigging",
+			"prev": "q17b_5"
+		},
+		{
+			"no": "(7)",
+			"text": "Other issues related to non-compliance with competition laws",
+			"prev": "q17b_7"
+		},
+		{
+			"no": "(8)",
+			"text": "Issues related to anti-money laundering laws",
+			"prev": "q11_5"
+		},
+		{
+			"no": "(9)",
+			"text": "Issues related to export and import procedures (e.g., customs laws)",
+			"prev": "q17b_23"
+		},
+		{
+			"no": "(10)",
+			"text": "Issues related to sanctions and export control",
+			"prev": "q17b_24"
+		},
+		{
+			"no": "(11)",
+			"text": "Issues related to industry-specific laws (e.g., REACH, RoHS)",
+			"prev": "q17b_25"
+		},
+		{
+			"no": "(12)",
+			"text": "Issues related to corporate fraud",
+			"prev": "q17b_26"
+		},
+		{
+			"no": "(13)",
+			"text": "Issues related to accounting laws",
+			"prev": ""
+		},
+		{
+			"no": "(14)",
+			"text": "Issues related to tax laws",
+			"prev": ""
+		},
+		{
+			"no": "(15)",
+			"text": "Issues related to financial reporting",
+			"prev": "q17b_27"
+		},
+		{
+			"no": "(16)",
+			"text": "Inappropriate use of company assets",
+			"prev": "q17b_8"
+		},
+		{
+			"no": "(17)",
+			"text": "Improper use of the company’s information systems",
+			"prev": "q17b_9"
+		},
+		{
+			"no": "(18)",
+			"text": "Issues related to side business without the company’s approval",
+			"prev": "q17b_10"
+		},
+		{
+			"no": "(19)",
+			"text": "Other issues related to conflicts of interest or keeping public and private matters separate",
+			"prev": "q17b_11"
+		},
+		{
+			"no": "(20)",
+			"text": "Issues related to gifts or entertainment for public officials (or equivalent)",
+			"prev": "q17b_12"
+		},
+		{
+			"no": "(21)",
+			"text": "Issues related to gifts or entertainment for other persons",
+			"prev": "q17b_14"
+		},
+		{
+			"no": "(22)",
+			"text": "Issues related to inappropriate use of entertainment expenses",
+			"prev": "q17b_15"
+		},
+		{
+			"no": "(23)",
+			"text": "Other issues related to gifts or entertainment",
+			"prev": "q17b_16"
+		},
+		{
+			"no": "(24)",
+			"text": "Issues related to the management of personal information",
+			"prev": "q17b_17"
+		},
+		{
+			"no": "(25)",
+			"text": "Improper use of software",
+			"prev": "q17b_18"
+		},
+		{
+			"no": "(26)",
+			"text": "Issues related to copyright, trademark rights or other intellectual property rights",
+			"prev": "q17b_19"
+		},
+		{
+			"no": "(27)",
+			"text": "Management of insider trading information or confidential information",
+			"prev": "q17b_20"
+		},
+		{
+			"no": "(28)",
+			"text": "Inappropriate communication of information on social networking services or other media",
+			"prev": "q17b_21"
+		},
+		{
+			"no": "(29)",
+			"text": "Issues related to cybersecurity",
+			"prev": ""
+		},
+		{
+			"no": "(30)",
+			"text": "Other issues related to information management",
+			"prev": "q17b_22"
+		},
+		{
+			"no": "(31)",
+			"text": "Issues related to non-compliance with Business Conduct Guidelines of your Bloc",
+			"prev": "q11_13"
+		},
+		{
+			"no": "(32)",
+			"text": "Issues related to contract handling and document retention rules",
+			"prev": "q11_8"
+		},
+		{
+			"no": "(33)",
+			"text": "Other issues related to non-compliance with internal rules",
+			"prev": "q11_13"
+		},
+		{
+			"no": "(34)",
+			"text": "Issues related to political contributions and donations",
+			"prev": "q17b_28"
+		},
+		{
+			"no": "(35)",
+			"text": "Issues related to environmental protection laws",
+			"prev": "q17b_29"
+		},
+		{
+			"no": "(36)",
+			"text": "Issues related to terrorists",
+			"prev": "q17b_30"
+		},
+		{
+			"no": "(37)",
+			"text": "Issues related to organized crime groups",
+			"prev": "q17b_30"
+		},
+		{
+			"no": "(38)",
+			"text": "Others (please provide a written explanation)",
+			"prev": ""
+		},
+		{
+			"no": "(39)",
+			"text": "None",
+			"prev": ""
+		}
+	],
+	"categories": [
+		{
+			"title": "< Office environment and harassment >",
+			"answers_from": 1,
+			"answers_to": 5
+		},
+		{
+			"title": "< Compliance with competition and anti-money laundering laws >",
+			"answers_from": 6,
+			"answers_to": 8
+		},
+		{
+			"title": "< Compliance with export and import procedures and industry-specific laws >",
+			"answers_from": 9,
+			"answers_to": 11
+		},
+		{
+			"title": "< Compliance with accounting and tax laws and financial reporting >",
+			"answers_from": 12,
+			"answers_to": 15
+		},
+		{
+			"title": "< Conflicts of interest or keeping public and private matters separate >",
+			"answers_from": 16,
+			"answers_to": 19
+		},
+		{
+			"title": "< Gifts and entertainment >",
+			"answers_from": 20,
+			"answers_to": 23
+		},
+		{
+			"title": "< Handling of information >",
+			"answers_from": 24,
+			"answers_to": 30
+		},
+		{
+			"title": "< Observance of Internal Rules >",
+			"answers_from": 31,
+			"answers_to": 33
+		},
+		{
+			"title": "< Contributions and donations >",
+			"answers_from": 34,
+			"answers_to": 34
+		},
+		{
+			"title": "< Issues related to environmental protection laws >",
+			"answers_from": 35,
+			"answers_to": 35
+		},
+		{
+			"title": "< Issues related to organized crime groups >",
+			"answers_from": 36,
+			"answers_to": 37
+		},
+		{
+			"title": "< Other >",
+			"answers_from": 38,
+			"answers_to": 39
+		}
+	]
+},
+{
+	"name": "q16a",
+	"type": "radio",
+	"q_no": "16A",
+	"prev_name": "q17",
+	"question": "If you chose any issues in the question 15, do you think any issue is currently hidden in your office?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "No"
+		},
+		{
+			"no": "b)",
+			"text": "Yes"
+		},
+		{
+			"no": "c)",
+			"text": "Not sure"
+		}
+	]
+},
+{
+	"name": "q16b",
+	"type": "radio",
+	"q_no": "16B",
+	"prev_name": "q17a",
+	"class": "full",
+	"question": "If you chose “Yes” or “Not sure” in response to the question 16A, why do you think the issues remain hidden? Please choose one answer.",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "There are compliance violations in my office that are overlooked."
+		},
+		{
+			"no": "(2)",
+			"text": "There are compliance violations in my office that are deliberately ignored."
+		},
+		{
+			"no": "(3)",
+			"text": "Other reasons (please provide an explanation)"
+		}
+	],
+	"addional_textarea": {
+		"name": "q16at"
+	}
+},
+{
+	"name": "q16c",
+	"type": "radio",
+	"q_no": "16C",
+	"prev_name": "q17c",
+	"class": "long",
+	"question": "If you chose “Yes” or “Not sure” in response to the question 16A, how do you feel it improved from the last year?",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "It has improved but still remains a problem"
+		},
+		{
+			"no": "(2)",
+			"text": "It is the same situation as one year before"
+		},
+		{
+			"no": "(3)",
+			"text": "It is getting worse"
+		},
+		{
+			"no": "(4)",
+			"text": "I don’t know / not sure"
+		}
+	]
+},
+{
+	"name": "q17",
+	"type": "radio",
+	"q_no": "17",
+	"prev_name": "q12",
+	"question": "Are you aware of the “Speak Up!” page on the intranet?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q18",
+	"type": "radio",
+	"q_no": "18",
+	"prev_name": "q13",
+	"question": "Are you aware of the internal and external reporting routes available at Mitsui, including, for example, EthicsPoint?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "Yes"
+		},
+		{
+			"no": "b)",
+			"text": "No"
+		}
+	]
+},
+{
+	"name": "q19",
+	"type": "radio",
+	"q_no": "19",
+	"prev_name": "q15",
+	"class": "long left",
+	"with_no": true,
+	"question": "<u>During the past one year,</u> did you speak up after discovering violations of laws, Business Conduct Guidelines or internal rules by your co-workers, managers or senior colleagues?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "I have spoken up on or reported such behaviour."
+		},
+		{
+			"no": "b)",
+			"text": "I have not spoken up on or reported such behaviour."
+		},
+		{
+			"no": "c)",
+			"text": "I have not come across any such violations or behaviour."
+		}
+	]
+},
+{
+	"name": "q19a",
+	"type": "checkbox",
+	"q_no": "19A",
+	"prev_name": "q15a",
+	"class": "full",
+	"question": "If you chose (b) in response to question 19, what were the reason you hesitated or felt unable to speak up or report such behaviour? Please choose one or more answers.",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "I didn’t think the behaviour went as far as being a compliance violation."
+		},
+		{
+			"no": "(2)",
+			"text": "I don’t like the idea of secretly informing on people and blaming them."
+		},
+		{
+			"no": "(3)",
+			"text": "I thought the people involved should sort it out themselves."
+		},
+		{
+			"no": "(4)",
+			"text": "I was worried that I would become isolated in the office or there would be retaliation."
+		},
+		{
+			"no": "(5)",
+			"text": "I thought it was an issue for the organization as a whole."
+		},
+		{
+			"no": "(6)",
+			"text": "The issue was more to do with the nature and practices of the industry in question"
+		},
+		{
+			"no": "(7)",
+			"text": "Nothing would come of it if I did make a report or seek a consultation.",
+			"prev": ""
+		},
+		{
+			"no": "(8)",
+			"text": "I thought there was a risk of a negative impact on sales or business performance.",
+			"prev": "q15a_7"
+		},
+		{
+			"no": "(9)",
+			"text": "I was concerned there would be a negative impact on my annual HR appraisal. ",
+			"prev": "q15a_8"
+		},
+		{
+			"no": "(10)",
+			"text": "My department tends to be secretive by nature.",
+			"prev": "q15a_9"
+		},
+		{
+			"no": "(11)",
+			"text": "I didn’t know who to talk to.",
+			"prev": "q15a_10"
+		},
+		{
+			"no": "(12)",
+			"text": "I decided that it wasn’t a major problem.",
+			"prev": "q15a_11"
+		},
+		{
+			"no": "(13)",
+			"text": "Other (please provide a written explanation)",
+			"prev": "q15a_12"
+		}
+	],
+	"addional_textarea": {
+		"name": "q19at"
+	}
+},
+{
+	"name": "q20",
+	"type": "radio",
+	"q_no": "20",
+	"prev_name": "q16",
+	"class": "long left",
+	"with_no": true,
+	"question": "<u>During the past one year,</u> did you hesitate or feel unable to speak up or report any issue you were personally handling or personally involved in any way  that you suspected or believed was a compliance violation or could lead to a compliance violation?",
+	"answers": [
+		{
+			"no": "a)",
+			"text": "I have spoken up on all such issues that I faced."
+		},
+		{
+			"no": "b)",
+			"text": "I did not speak up on some issues that I faced."
+		},
+		{
+			"no": "c)",
+			"text": "I did not face any such issues."
+		}
+	]
+},
+{
+	"name": "q20a",
+	"type": "checkbox",
+	"q_no": "20A",
+	"prev_name": "q16a",
+	"class": "full",
+	"question": "If you chose (b) in response to the question 20, why did you hesitate or feel unable to speak up about your issue? Please choose one or more answers.",
+	"answers": [
+		{
+			"no": "(1)",
+			"text": "I was frightened of being punished or creating a negative impact on my annual HR appraisal. "
+		},
+		{
+			"no": "(2)",
+			"text": "I couldn’t trust my manager."
+		},
+		{
+			"no": "(3)",
+			"text": "I thought I would solve the problem on my own."
+		},
+		{
+			"no": "(4)",
+			"text": "I thought nobody would find out."
+		},
+		{
+			"no": "(5)",
+			"text": "I thought it would cause trouble in my office or for my manager/colleague."
+		},
+		{
+			"no": "(6)",
+			"text": "My manager or colleagues were also involved, and it was an issue for the whole organization."
+		},
+		{
+			"no": "(7)",
+			"text": "It would have made my office a harder place for me to be."
+		},
+		{
+			"no": "(8)",
+			"text": "I thought there was a risk of a negative impact on sales or business performance."
+		},
+		{
+			"no": "(9)",
+			"text": "It has been standard industry practice."
+		},
+		{
+			"no": "(10)",
+			"text": "I didn’t think it was a major problem."
+		},
+		{
+			"no": "(11)",
+			"text": "Other (please provide a written explanation)"
+		}
+	],
+	"addional_textarea": {
+		"name": "q20at"
+	}
+},
+{
+	"name": "q21",
+	"type": "textarea",
+	"q_no": "21",
+	"prev_name": "q18",
+	"question": "Please freely express your opinions or concerns (positive and/or negative) about the level of integrity and compliance awareness at your workplace <u>during the past one year</u> (including, without limitation, the possibility to speak up, the reliability and confidentiality of internal/external reporting routes or other activities in your office). We also welcome your feedback and opinions on how to improve the level of integrity and compliance awareness at Mitsui.",
+	"answers": []
+}]

@@ -1,95 +1,65 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import { useSearchParams, useRouter } from 'next/navigation';
+import Header from './components/header';
+
+// Contents
+const contents: Record<string, { title: string; body: JSX.Element }> = {
+	// Welcome
+	welcome : {
+		title: 'Welcome to the Integrity Awareness Survey 2025',
+		body: (<>
+			<p>This survey is conducted on behalf of Europe Bloc and MEA Bloc (&quot;Mitsui&quot;) by Newton Information Technology Ltd., an independent IT company, so you can be assured your answers and feedback will remain anonymous and will not be traceable by anyone at Mitsui.</p>
+			<p>It is important that you complete the survey as honestly as possible so we may obtain accurate data on the level of integrity and compliance awareness in Mitsui. The results of the survey will be used to improve the compliance programme of Mitsui. This is a short survey and should not take you long to complete. The names and answers of participants will be kept confidential.</p>
+			<p>Please click on the <strong>&quot;START NOW&quot;</strong> button when you are ready.</p>
+		</>),
+	},
+	// Thank You
+	thankyou: {
+		title: 'Thank you for your cooperation',
+		body: (<>
+			<p>If you wish to locate or access any of the following, please click on the links below.</p>
+			<p><a href="https://mitsui365.sharepoint.com/sites/02810/0007/Document4_JA/90/50/WithIntegrity_E.pdf?CID=e900688a-0638-400e-b3e8-cfaac038a22b" target="_blank">&quot;With Integrity&quot; Mitsui & Co. Group Conduct Guidelines</a></p>
+			<p><a href="https://mitsui365.sharepoint.com/sites/02840/e" target="_blank">Mitsui Tokyo Integrity Portal</a></p>
+			<p><a href="https://mitsui365.sharepoint.com/sites/02810/1002/Document4_EN/08_0_. Policies and Procedures/01. EMEA/A. Management/A0400 Business Conduct Guidelines.pdf" target="_blank">Europe Bloc Business Conduct Guidelines</a></p>
+			<p><a href="https://mitsui365.sharepoint.com/sites/02810/1005/Document4_EN/6 Policies %26 Manuals/1 MEA Bloc Common/01 Internal Rules/02. MEA_Business Conduct Guidelines.pdf" target="_blank">Middle East and Africa Bloc Business Conduct Guidelines</a></p>
+			<p><a href="https://mgp.mitsui.com/1002/policies-europe-bloc" target="_blank">Europe Bloc Internal Rules on MGP</a></p>
+			<p><a href="https://mgp.mitsui.com/1005/Internal-Regulations" target="_blank">MEA Bloc Internal Regulations on MGP</a></p>
+			<p><a href="https://mgp.mitsui.com/1002/speak-up" target="_blank">Speak Up! Page</a></p>
+			<p><a href="https://secure.ethicspoint.eu/domain/media/en/gui/106961/index.html" target="_blank">EthicsPoint Hotline</a></p>
+		</>),
+	},
+	error: {
+		title: 'An error occurred during the process',
+		body: (<>
+			<p>Sorry for the inconvenience.</p>
+			<p>Please click on the <strong>&quot;START NOW&quot;</strong> button to restart the survey.</p>
+		</>),
+	},
+};
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	const searchParams = useSearchParams();
+	const type = searchParams.get('type') || 'welcome';
+	const content = contents[type as keyof typeof contents] || contents.welcome;
+	const router = useRouter();
+	// Go to Survey
+	const goToSurvey = () => {
+		router.push('/survey');
+	};
+	return(
+		<div id="container">
+			<Header />
+			<main className='home'>
+				<div className='block'>
+					<h3>{content.title}</h3>
+					<div>{content.body}</div>
+				</div>
+			</main>
+			<footer>
+				<div></div>
+				<div className={`right`}><button onClick={goToSurvey}>START NOW</button></div>
+			</footer>
+		</div>
+	);
 }
