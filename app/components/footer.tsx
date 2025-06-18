@@ -1,22 +1,17 @@
-'use client';
+import type { FooterButton } from '../../lib/types';
 
-import { useRouter } from 'next/navigation';
+type Props = {
+	back?: FooterButton;
+	next?: FooterButton;
+	backDisabled?: boolean;
+	nextDisabled?: boolean;
+};
 
-export default function Footer() {
-	const router = useRouter();
-	// Go Next
-	const goNext = () => {
-		// Go to Survey
-		router.push('/survey');
-	};
-	// Go Back
-	const goBack = () => {
-	};
-	return (
+export default function Footer({ back, next }: Props) {
+	return(
 		<footer>
-			<div><button onClick={goBack}>BACK</button></div>
-			<div className={`right`}><button onClick={goNext}>NEXT</button></div>
-			{/* <div className={`right`}><button onClick={goNext}>START NOW</button></div> */}
+			<div className="left">{back && (<button type="button" onClick={back.onClick} disabled={back.disabled}>{back.label}</button>)}</div>
+			<div className="right">{next && (<button type="button" onClick={next.onClick} disabled={next.disabled}>{next.label}</button>)}</div>
 		</footer>
-	);
-}
+	)
+};

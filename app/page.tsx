@@ -1,12 +1,12 @@
 'use client';
 
 import type { JSX } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Header from './components/header';
 import Footer from './components/footer';
 
 // Contents
-const contents: Record<string, { title: string; body: JSX.Element }> = {
+const contents: Record<string, { title: string; body: JSX.Element; next?: boolean; }> = {
 	// Welcome
 	welcome : {
 		title: 'Welcome to the Integrity Awareness Survey 2025',
@@ -15,12 +15,13 @@ const contents: Record<string, { title: string; body: JSX.Element }> = {
 			<p>It is important that you complete the survey as honestly as possible so we may obtain accurate data on the level of integrity and compliance awareness in Mitsui. The results of the survey will be used to improve the compliance programme of Mitsui. This is a short survey and should not take you long to complete. The names and answers of participants will be kept confidential.</p>
 			<p>Please click on the <strong>&quot;START NOW&quot;</strong> button when you are ready.</p>
 		</>),
+		next: true,
 	},
 	// Thank You
 	thankyou: {
 		title: 'Thank you for your cooperation',
 		body: (<>
-			<p>If you wish to locate or access any of the following, please click on the links below.</p>
+			<h4>If you wish to locate or access any of the following, please click on the links below.</h4>
 			<p><a href="https://mitsui365.sharepoint.com/sites/02810/0007/Document4_JA/90/50/WithIntegrity_E.pdf?CID=e900688a-0638-400e-b3e8-cfaac038a22b" target="_blank">&quot;With Integrity&quot; Mitsui & Co. Group Conduct Guidelines</a></p>
 			<p><a href="https://mitsui365.sharepoint.com/sites/02840/e" target="_blank">Mitsui Tokyo Integrity Portal</a></p>
 			<p><a href="https://mitsui365.sharepoint.com/sites/02810/1002/Document4_EN/08_0_. Policies and Procedures/01. EMEA/A. Management/A0400 Business Conduct Guidelines.pdf" target="_blank">Europe Bloc Business Conduct Guidelines</a></p>
@@ -31,30 +32,41 @@ const contents: Record<string, { title: string; body: JSX.Element }> = {
 			<p><a href="https://secure.ethicspoint.eu/domain/media/en/gui/106961/index.html" target="_blank">EthicsPoint Hotline</a></p>
 		</>),
 	},
+	// Error
 	error: {
 		title: 'An error occurred during the process',
 		body: (<>
 			<p>Sorry for the inconvenience.</p>
 			<p>Please click on the <strong>&quot;START NOW&quot;</strong> button to restart the survey.</p>
 		</>),
+		next: true,
 	},
 };
 
 // Page
 export default function Home() {
 	const searchParams = useSearchParams();
-	const type = searchParams.get('type') || 'welcome';
+	const type = searchParams.get('page') || 'welcome';
 	const content = contents[type as keyof typeof contents] || contents.welcome;
+	const router = useRouter();
 	return(
 		<div id="container">
 			<Header />
-			<main className='home'>
+			<main id='home'>
 				<div className='block'>
 					<h3>{content.title}</h3>
 					<div>{content.body}</div>
 				</div>
 			</main>
-			<Footer />
+			{content.next && (
+				<Footer
+					next={{
+						label: 'START NOW',
+						onClick: () => router.push('/survey'),
+						disabled: false,
+					}}
+				/>
+			)}
 		</div>
 	);
 }

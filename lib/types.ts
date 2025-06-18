@@ -2,7 +2,8 @@
 export type Question = {
 	name: string;
 	type: string;
-	q_no: string;
+	no: string;
+	step: number;
 	question: string;
 	class?: string;
 	with_no?: boolean;
@@ -28,4 +29,11 @@ export type Question = {
 		answers_from: number;
 		answers_to: number;
 	}[];
+};
+
+// Footer button
+export type FooterButton = {
+	label: string;
+	onClick: () => void;
+	disabled: boolean;
 };

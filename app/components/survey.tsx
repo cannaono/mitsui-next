@@ -8,7 +8,7 @@ type Props = {
 // Page
 export default function MainPage({ questions }: Props) {
 	return (
-		<main className='survey'>
+		<main id='survey'>
 		{questions.map((q) => {
 			// Answer elements
 			let elements;
@@ -60,9 +60,9 @@ export default function MainPage({ questions }: Props) {
 				</>);
 			}
 			return(
-				<div key={q.name} className="block">
+				<div key={q.name} className={`block ${q.step ?? ''}`}>
 					<h3>
-						<div className="qno">Q{q.q_no}</div>
+						<div className="qno">Q{q.no}</div>
 						<div className="question" dangerouslySetInnerHTML={{ __html: q.question }} />
 					</h3>
 					<div key={q.name} className="answer">{elements}</div>
