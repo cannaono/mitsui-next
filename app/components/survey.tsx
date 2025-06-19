@@ -3,10 +3,12 @@ import type { Question } from '../../lib/types';
 
 type Props = {
 	questions: Question[];
+	answers: { [key: string]: string };
+	onAnswerChange: (key: string, val: string) => void;
 };
 
 // Page
-export default function MainPage({ questions }: Props) {
+export default function Main({ questions, answers, onAnswerChange }: Props) {
 	return (
 		<main id='survey'>
 		{questions.map((q) => {
@@ -44,12 +46,18 @@ export default function MainPage({ questions }: Props) {
 						if(q.type === 'radio'){
 							return (
 								<label key={q.name + i}><li className={!q.class ? "middle" : q.class}>
-								<input type="radio" name={q.name} id={q.name + '_' + i} value={i} />{text}</li></label>
+								<input type="radio" name={q.name} id={q.name + '_' + i} value={i} 
+									checked={Number(answers[q.name]) === i} 
+									onChange={(e) => onAnswerChange(q.name, e.target.value)}
+								/>{text}</li></label>
 							);
 						}else if(q.type === 'checkbox'){
 							return (
 								<label key={q.name + i}><li className={!q.class ? "middle" : q.class}>
-								<input type="checkbox" name={q.name + '_' + i} id={q.name + '_' + i} value={1} />{text}</li></label>
+								<input type="checkbox" name={q.name + '_' + i} id={q.name + '_' + i} value={1} 
+									checked={answers[q.name + '_' + i] === '1' || false}
+									onChange={(e) => onAnswerChange(q.name + '_' + i, e.target.value)}
+								/>{text}</li></label>
 							);
 						}
 					})}
@@ -60,7 +68,7 @@ export default function MainPage({ questions }: Props) {
 				</>);
 			}
 			return(
-				<div key={q.name} className={`block ${q.step ?? ''}`}>
+				<div key={q.name} className="block">
 					<h3>
 						<div className="qno">Q{q.no}</div>
 						<div className="question" dangerouslySetInnerHTML={{ __html: q.question }} />

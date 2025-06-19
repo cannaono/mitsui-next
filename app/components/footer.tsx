@@ -3,8 +3,6 @@ import type { FooterButton } from '../../lib/types';
 type Props = {
 	back?: FooterButton;
 	next?: FooterButton;
-	backDisabled?: boolean;
-	nextDisabled?: boolean;
 };
 
 export default function Footer({ back, next }: Props) {

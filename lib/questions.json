@@ -144,15 +144,15 @@
 	"question": "What is your grade?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Grade 1 to 4 (or equivalent)"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Grade 5, M2 or above (or equivalent)"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "I prefer not to say"
 		}
 	]
@@ -166,11 +166,11 @@
 	"question": "Do you have a good understanding of the “With Integrity” Mitsui & Co. Group Conduct Guidelines?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -184,11 +184,11 @@
 	"question": "Do you have a good understanding of “Act with integrity” as part of Corporate Mission Vision Values?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -202,11 +202,11 @@
 	"question": "Do you have a good understanding of “Build an organization with integrity” as one of Mitsui & Co.’s Materiality?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -220,11 +220,11 @@
 	"question": "Do you have a good understanding of the Mitsui Business Conduct Guidelines applicable to your Bloc?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -238,23 +238,23 @@
 	"question": "On scale of 1-5 (with 1 being least aware and 5 being fully aware), how do you rate your understanding level of the internal rules (including the Business Conduct Guidelines in your Bloc) which apply to your work?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "1"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "2"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "3"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "4"
 		},
 		{
-			"no": "e)",
+			"no": "(e)",
 			"text": "5"
 		}
 	]
@@ -268,23 +268,23 @@
 	"question": "On scale of 1-5 (with 1 being least aware and 5 being fully aware), how do you rate your understanding level of the laws and regulations which apply to your work?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "1"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "2"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "3"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "4"
 		},
 		{
-			"no": "e)",
+			"no": "(e)",
 			"text": "5"
 		}
 	]
@@ -297,11 +297,11 @@
 	"question": "Do you know who you can consult with if you are not sure the relevant internal rules apply to your work?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -315,11 +315,11 @@
 	"question": "Do you know who you can contact if you have any compliance/integrity-related concerns?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -333,19 +333,19 @@
 	"question": "Do you agree or disagree with the following statement:<q>My office is open and communicative. It is easy to exchange honest opinions, report bad or non-positive news, or ask for help on any matter.</q>",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Agree"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Mostly agree"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "Mostly disagree"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "Disagree"
 		}
 	]
@@ -396,19 +396,19 @@
 	"question": "Do you agree or disagree with the following statement:<q>The environment in my office is supportive of an open atmosphere where mutual respect among each individual is highly valued?</q>",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Agree"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Mostly agree"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "Mostly disagree"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "Disagree"
 		}
 	]
@@ -422,19 +422,19 @@
 	"question": "Do you agree or disagree with the following statement:<q>Integrity and compliance are valued in my office in addition to work performance?</q>",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Agree"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Mostly agree"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "Mostly disagree"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "Disagree"
 		}
 	]
@@ -448,22 +448,22 @@
 	"question": "Do you agree or disagree with the following statement:<q>My manager supports a culture of integrity and compliance in my office. For example, by sharing his/her own thoughts and experiences or providing the opportunity to talk about the importance of integrity and compliance.</q>",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Agree",
 			"prev": "1"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Mostly agree",
 			"prev": ""
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "Mostly disagree",
 			"prev": "2"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "Disagree",
 			"prev": ""
 		}
@@ -477,19 +477,19 @@
 	"question": "Do you agree or disagree with the following statement:<q>The senior management in my Bloc supports a culture of integrity and compliance. For example, they share their thoughts and experiences in their own words, and give everyone a chance to talk about the importance of Integrity and Compliance.</q>",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Agree"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Mostly agree"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "Mostly disagree"
 		},
 		{
-			"no": "d)",
+			"no": "(d)",
 			"text": "Disagree"
 		}
 	]
@@ -505,15 +505,15 @@
 	"question": "<u>During the past one year,</u> have you received any request from customers or other parties that you believe was a breach of our Business Conduct Guidelines or our internal rules, or had a risk of leading to such breach? IF SO, were you able to refuse such requests?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "I have not received such requests"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "I received such requests but refused them."
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "I received such requests but was unable to refuse them and accepted such requests."
 		}
 	]
@@ -826,15 +826,15 @@
 	"question": "If you chose any issues in the question 15, do you think any issue is currently hidden in your office?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "No"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "Yes"
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "Not sure"
 		}
 	]
@@ -901,11 +901,11 @@
 	"question": "Are you aware of the “Speak Up!” page on the intranet?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -919,11 +919,11 @@
 	"question": "Are you aware of the internal and external reporting routes available at Mitsui, including, for example, EthicsPoint?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "Yes"
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "No"
 		}
 	]
@@ -939,15 +939,15 @@
 	"question": "<u>During the past one year,</u> did you speak up after discovering violations of laws, Business Conduct Guidelines or internal rules by your co-workers, managers or senior colleagues?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "I have spoken up on or reported such behaviour."
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "I have not spoken up on or reported such behaviour."
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "I have not come across any such violations or behaviour."
 		}
 	]
@@ -1036,15 +1036,15 @@
 	"question": "<u>During the past one year,</u> did you hesitate or feel unable to speak up or report any issue you were personally handling or personally involved in any way  that you suspected or believed was a compliance violation or could lead to a compliance violation?",
 	"answers": [
 		{
-			"no": "a)",
+			"no": "(a)",
 			"text": "I have spoken up on all such issues that I faced."
 		},
 		{
-			"no": "b)",
+			"no": "(b)",
 			"text": "I did not speak up on some issues that I faced."
 		},
 		{
-			"no": "c)",
+			"no": "(c)",
 			"text": "I did not face any such issues."
 		}
 	]

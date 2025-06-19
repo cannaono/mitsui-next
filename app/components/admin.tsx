@@ -6,7 +6,7 @@ type Props = {
 	questions: Question[];
 };
 
-export default async function AdminPage({ questions }: Props) {
+export default async function Main({ questions }: Props) {
 	// Get data and set results to Question object
 	for(const q of questions.filter(q => q.type !== 'textarea')){
 		// SQL
