@@ -157,7 +157,7 @@ main ul{
 }
 main li{
 	margin: 5px;
-	padding: 5px 5px 5px 35px;
+	padding: 5px 5px 5px 37px;
 	display: inline-block;
 	border: 3px solid var(--color4);
 	border-radius: 5px;
@@ -190,16 +190,16 @@ main textarea.small{
 
 /* Input size */
 .short{
-	width: 38.5px;
+	width: 36.5px;
 }
 .middle{
-	width: calc(25% - 56px);
+	width: calc(25% - 58px);
 }
 .long{
-	width: calc(50% - 58px);
+	width: calc(50% - 59px);
 }
 .full{
-	width: calc(100% - 60px);
+	width: calc(100% - 61px);
 }
 
 /* Home */
@@ -213,11 +213,10 @@ main#home div div{
 	padding: 20px;
 }
 main#home a{
-	margin-left: 20px;
 	padding-left: 30px;
 	color: var(--color1);
 	text-decoration: none;
-	background: url(../public/checked.png) left center no-repeat;
+	background: url(../public/link.png) left center no-repeat;
 }
 main#home a:hover{
 	text-decoration: underline;

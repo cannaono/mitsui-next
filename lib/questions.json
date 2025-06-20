@@ -380,12 +380,10 @@
 		{
 			"no": "(5)",
 			"text": "Other (please provide a written explanation)",
+			"textarea_name": "q10a_5t",
 			"prev": "4"
 		}
-	],
-	"addional_textarea": {
-		"name": "q10at"
-	}
+	]
 },
 {
 	"name": "q11",
@@ -858,12 +856,10 @@
 		},
 		{
 			"no": "(3)",
-			"text": "Other reasons (please provide an explanation)"
+			"text": "Other reasons (please provide an explanation)",
+			"textarea_name": "q16b_3t"
 		}
-	],
-	"addional_textarea": {
-		"name": "q16at"
-	}
+	]
 },
 {
 	"name": "q16c",
@@ -1018,12 +1014,10 @@
 		{
 			"no": "(13)",
 			"text": "Other (please provide a written explanation)",
+			"textarea_name": "q19a_13t",
 			"prev": "q15a_12"
 		}
-	],
-	"addional_textarea": {
-		"name": "q19at"
-	}
+	]
 },
 {
 	"name": "q20",
@@ -1100,12 +1094,10 @@
 		},
 		{
 			"no": "(11)",
-			"text": "Other (please provide a written explanation)"
+			"text": "Other (please provide a written explanation)",
+			"textarea_name": "q20a_11t"
 		}
-	],
-	"addional_textarea": {
-		"name": "q20at"
-	}
+	]
 },
 {
 	"name": "q21",

@@ -6,7 +6,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 // Contents
-const contents: Record<string, { title: string; body: JSX.Element; next?: boolean; }> = {
+const contents: Record<string, { title: string; body: JSX.Element; footer: boolean; }> = {
 	// Welcome
 	welcome : {
 		title: 'Welcome to the Integrity Awareness Survey 2025',
@@ -15,7 +15,7 @@ const contents: Record<string, { title: string; body: JSX.Element; next?: boolea
 			<p>It is important that you complete the survey as honestly as possible so we may obtain accurate data on the level of integrity and compliance awareness in Mitsui. The results of the survey will be used to improve the compliance programme of Mitsui. This is a short survey and should not take you long to complete. The names and answers of participants will be kept confidential.</p>
 			<p>Please click on the <strong>&quot;START NOW&quot;</strong> button when you are ready.</p>
 		</>),
-		next: true,
+		footer: true,
 	},
 	// Thank You
 	thankyou: {
@@ -31,6 +31,7 @@ const contents: Record<string, { title: string; body: JSX.Element; next?: boolea
 			<p><a href="https://mgp.mitsui.com/1002/speak-up" target="_blank">Speak Up! Page</a></p>
 			<p><a href="https://secure.ethicspoint.eu/domain/media/en/gui/106961/index.html" target="_blank">EthicsPoint Hotline</a></p>
 		</>),
+		footer: false,
 	},
 	// Error
 	error: {
@@ -39,7 +40,7 @@ const contents: Record<string, { title: string; body: JSX.Element; next?: boolea
 			<p>Sorry for the inconvenience.</p>
 			<p>Please click on the <strong>&quot;START NOW&quot;</strong> button to restart the survey.</p>
 		</>),
-		next: true,
+		footer: true,
 	},
 };
 
@@ -58,7 +59,7 @@ export default function Home() {
 					<div>{content.body}</div>
 				</div>
 			</main>
-			{content.next && (
+			{content.footer && (
 				<Footer
 					next={{
 						label: 'START NOW',

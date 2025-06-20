@@ -14,6 +14,7 @@ export type Question = {
 	answers: {
 		no: string;
 		text: string;
+		textarea_name?: string,
 		num?: number;
 		prev_num?: number;
 		prev?: string;
@@ -21,9 +22,6 @@ export type Question = {
 		rate?: number;
 		res_rate?: number;
 	}[];
-	addional_textarea?: {
-		name: string;
-	};
 	categories?: {
 		title: string;
 		answers_from: number;
