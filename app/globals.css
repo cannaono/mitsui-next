@@ -182,9 +182,6 @@ main li label{
 main textarea{
 	margin: 5px;
 	width: calc(100% - 20px);
-	height: 100px;
-}
-main textarea.small{
 	height: 50px;
 }
 

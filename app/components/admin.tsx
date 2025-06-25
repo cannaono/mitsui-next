@@ -30,22 +30,25 @@ export default async function Main({ questions }: Props) {
 			});
 		}
 		// Query
-		const rs = await query(sql + ' NULL AS dummy', []);
-		
-		// Set results to questions
-		q.res = rs.rows[0]['t' + q.no];
-		q.num = q.answers.reduce((sum, a) => sum + (a.num ?? 0), 0);
-		q.res_rate = Math.round((q.num > 0 ? ((q.res ?? 0) / q.num) * 100 : 0) * 100) / 100;
-		
-		// Set results to answers
-		q.answers = q.answers.map((a, i) => {
-			return {
-				...a,
-				res: rs.rows[0]['a' + i],
-				rate: Math.round((rs.rows[0]['t' + q.no] > 0 ? (rs.rows[0]['a' + i] / rs.rows[0]['t' + q.no]) * 100 : 0) * 100) / 100,
-				res_rate: Math.round(((a.num ?? 0) > 0 ? ((rs.rows[0]['a' + i] ?? 0) / (a.num ?? 0)) * 100 : 0) * 100) / 100,
-			};
-		});
+		try{
+			const rs = await query(sql + ' NULL AS dummy', []);
+			// Set results to questions
+			q.res = rs.rows[0]['t' + q.no];
+			q.num = q.answers.reduce((sum, a) => sum + (a.num ?? 0), 0);
+			q.res_rate = Math.round((q.num > 0 ? ((q.res ?? 0) / q.num) * 100 : 0) * 100) / 100;
+			
+			// Set results to answers
+			q.answers = q.answers.map((a, i) => {
+				return {
+					...a,
+					res: rs.rows[0]['a' + i],
+					rate: Math.round((rs.rows[0]['t' + q.no] > 0 ? (rs.rows[0]['a' + i] / rs.rows[0]['t' + q.no]) * 100 : 0) * 100) / 100,
+					res_rate: Math.round(((a.num ?? 0) > 0 ? ((rs.rows[0]['a' + i] ?? 0) / (a.num ?? 0)) * 100 : 0) * 100) / 100,
+				};
+			});
+		}catch(e){
+			console.error('DB connection error:', e);
+		}
 	};
 
 	return (

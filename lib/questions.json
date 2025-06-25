@@ -559,191 +559,229 @@
 		{
 			"no": "(1)",
 			"text": "Unpaid overtime",
+			"textarea_name": "q15_1t",
 			"prev": "q17b_1"
 		},
 		{
 			"no": "(2)",
 			"text": "Sexual harassment",
+			"textarea_name": "q15_2t",
 			"prev": "q17b_2"
 		},
 		{
 			"no": "(3)",
 			"text": "Power harassment or bullying",
+			"textarea_name": "q15_3t",
 			"prev": "q17b_3"
 		},
 		{
 			"no": "(4)",
 			"text": "Issues related to discrimination (e.g., gender, sexuality, disability, ethnicity, nationality)",
+			"textarea_name": "q15_4t",
 			"prev": ""
 		},
 		{
 			"no": "(5)",
 			"text": "Other issues related to the office environment",
+			"textarea_name": "q15_5t",
 			"prev": "q17b_4"
 		},
 		{
 			"no": "(6)",
 			"text": "Issues related to cartels or bid-rigging",
+			"textarea_name": "q15_6t",
 			"prev": "q17b_5"
 		},
 		{
 			"no": "(7)",
 			"text": "Other issues related to non-compliance with competition laws",
+			"textarea_name": "q15_7t",
 			"prev": "q17b_7"
 		},
 		{
 			"no": "(8)",
 			"text": "Issues related to anti-money laundering laws",
+			"textarea_name": "q15_8t",
 			"prev": "q11_5"
 		},
 		{
 			"no": "(9)",
 			"text": "Issues related to export and import procedures (e.g., customs laws)",
+			"textarea_name": "q15_9t",
 			"prev": "q17b_23"
 		},
 		{
 			"no": "(10)",
 			"text": "Issues related to sanctions and export control",
+			"textarea_name": "q15_10t",
 			"prev": "q17b_24"
 		},
 		{
 			"no": "(11)",
 			"text": "Issues related to industry-specific laws (e.g., REACH, RoHS)",
+			"textarea_name": "q15_1t",
 			"prev": "q17b_25"
 		},
 		{
 			"no": "(12)",
 			"text": "Issues related to corporate fraud",
+			"textarea_name": "q15_12t",
 			"prev": "q17b_26"
 		},
 		{
 			"no": "(13)",
 			"text": "Issues related to accounting laws",
+			"textarea_name": "q15_13t",
 			"prev": ""
 		},
 		{
 			"no": "(14)",
 			"text": "Issues related to tax laws",
+			"textarea_name": "q15_14t",
 			"prev": ""
 		},
 		{
 			"no": "(15)",
 			"text": "Issues related to financial reporting",
+			"textarea_name": "q15_15t",
 			"prev": "q17b_27"
 		},
 		{
 			"no": "(16)",
 			"text": "Inappropriate use of company assets",
+			"textarea_name": "q15_16t",
 			"prev": "q17b_8"
 		},
 		{
 			"no": "(17)",
 			"text": "Improper use of the company’s information systems",
+			"textarea_name": "q15_17t",
 			"prev": "q17b_9"
 		},
 		{
 			"no": "(18)",
 			"text": "Issues related to side business without the company’s approval",
+			"textarea_name": "q15_18t",
 			"prev": "q17b_10"
 		},
 		{
 			"no": "(19)",
 			"text": "Other issues related to conflicts of interest or keeping public and private matters separate",
+			"textarea_name": "q15_19t",
 			"prev": "q17b_11"
 		},
 		{
 			"no": "(20)",
 			"text": "Issues related to gifts or entertainment for public officials (or equivalent)",
+			"textarea_name": "q15_20t",
 			"prev": "q17b_12"
 		},
 		{
 			"no": "(21)",
 			"text": "Issues related to gifts or entertainment for other persons",
+			"textarea_name": "q15_21t",
 			"prev": "q17b_14"
 		},
 		{
 			"no": "(22)",
 			"text": "Issues related to inappropriate use of entertainment expenses",
+			"textarea_name": "q15_22t",
 			"prev": "q17b_15"
 		},
 		{
 			"no": "(23)",
 			"text": "Other issues related to gifts or entertainment",
+			"textarea_name": "q15_23t",
 			"prev": "q17b_16"
 		},
 		{
 			"no": "(24)",
 			"text": "Issues related to the management of personal information",
+			"textarea_name": "q15_24t",
 			"prev": "q17b_17"
 		},
 		{
 			"no": "(25)",
 			"text": "Improper use of software",
+			"textarea_name": "q15_25t",
 			"prev": "q17b_18"
 		},
 		{
 			"no": "(26)",
 			"text": "Issues related to copyright, trademark rights or other intellectual property rights",
+			"textarea_name": "q15_26t",
 			"prev": "q17b_19"
 		},
 		{
 			"no": "(27)",
 			"text": "Management of insider trading information or confidential information",
+			"textarea_name": "q15_27t",
 			"prev": "q17b_20"
 		},
 		{
 			"no": "(28)",
 			"text": "Inappropriate communication of information on social networking services or other media",
+			"textarea_name": "q15_28t",
 			"prev": "q17b_21"
 		},
 		{
 			"no": "(29)",
 			"text": "Issues related to cybersecurity",
+			"textarea_name": "q15_29",
 			"prev": ""
 		},
 		{
 			"no": "(30)",
 			"text": "Other issues related to information management",
+			"textarea_name": "q15_30t",
 			"prev": "q17b_22"
 		},
 		{
 			"no": "(31)",
 			"text": "Issues related to non-compliance with Business Conduct Guidelines of your Bloc",
+			"textarea_name": "q15_31t",
 			"prev": "q11_13"
 		},
 		{
 			"no": "(32)",
 			"text": "Issues related to contract handling and document retention rules",
+			"textarea_name": "q15_32t",
 			"prev": "q11_8"
 		},
 		{
 			"no": "(33)",
 			"text": "Other issues related to non-compliance with internal rules",
+			"textarea_name": "q15_33t",
 			"prev": "q11_13"
 		},
 		{
 			"no": "(34)",
 			"text": "Issues related to political contributions and donations",
+			"textarea_name": "q15_34t",
 			"prev": "q17b_28"
 		},
 		{
 			"no": "(35)",
 			"text": "Issues related to environmental protection laws",
+			"textarea_name": "q15_35t",
 			"prev": "q17b_29"
 		},
 		{
 			"no": "(36)",
 			"text": "Issues related to terrorists",
+			"textarea_name": "q15_36t",
 			"prev": "q17b_30"
 		},
 		{
 			"no": "(37)",
 			"text": "Issues related to organized crime groups",
+			"textarea_name": "q15_37t",
 			"prev": "q17b_30"
 		},
 		{
 			"no": "(38)",
 			"text": "Others (please provide a written explanation)",
+			"textarea_name": "q15_38t",
 			"prev": ""
 		},
 		{
