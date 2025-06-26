@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from 'next/font/google';
+// import { Noto_Sans_JP } from 'next/font/google';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +7,11 @@ export const metadata: Metadata = {
 	description: "Europe Bloc and MEA Bloc Integrity Awareness Survey 2025",
 };
 
-const notoSans = Noto_Sans_JP({});
+// const notoSans = Noto_Sans_JP({
+// 	subsets: ['latin'],
+// 	display: 'swap',
+// 	preload: false,
+// });
 
 export default function RootLayout({
 	children,
@@ -16,7 +20,8 @@ export default function RootLayout({
 }>){
 	return (
 		<html lang="en">
-			<body className={notoSans.className}>
+			{/* <body className={notoSans.className}> */}
+			<body>
 				{children}
 			</body>
 		</html>
