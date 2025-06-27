@@ -18,7 +18,7 @@ export default function Main({ questions, answers, showQuestion, onAnswerChange,
 			let elements;
 			// textarea
 			if(q.type === 'textarea'){
-				elements = <textarea name={q.name} id={q.name} />;
+				elements = <textarea name={q.name} id={q.name} className="large" />;
 			// radio/checkbox
 			}else{
 				// Categories (if not defined set default values)
