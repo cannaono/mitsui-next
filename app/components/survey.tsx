@@ -5,12 +5,13 @@ type Props = {
 	questions: Question[];
 	answers: { [key: string]: string };
 	showQuestion: (q: Question, answers: Record<string, string>) => boolean;
-	onAnswerChange: (key: string, val: string) => void;
+	onAnswerChange: (key: string, val: string, id: string) => void;
 	disableText: (id: string, val: string) => boolean;
+	onTextChange: (key: string, val: string) => void;
 };
 
 // Page
-export default function Main({ questions, answers, showQuestion, onAnswerChange, disableText }: Props) {
+export default function Main({ questions, answers, showQuestion, onAnswerChange, disableText, onTextChange }: Props) {
 	return (
 		<main id='survey'>
 		{questions.map((q) => {
@@ -38,20 +39,22 @@ export default function Main({ questions, answers, showQuestion, onAnswerChange,
 									<label key={id}><li className={!q.class ? "middle" : q.class}>
 									<input type="radio" name={q.name} id={id} value={i} 
 										checked={Number(answers[q.name]) === i} 
-										onChange={(e) => onAnswerChange(q.name, e.target.value)}
+										onChange={(e) => onAnswerChange(q.name, e.target.value, id)}
 									/>{text}</li></label>
-									{a.textarea_name ? <textarea name={a.textarea_name} id={a.textarea_name} disabled={disableText(q.name, String(i))} /> : null}
+									{a.textarea_name ? <textarea name={a.textarea_name} id={a.textarea_name} disabled={disableText(q.name, String(i))} 
+									value={answers[a.textarea_name]} onChange={(e) => onTextChange(a.textarea_name ?? '', e.target.value)} /> : null}
 									</React.Fragment>
 								);
 							}else if(q.type === 'checkbox'){
 								return (
 									<React.Fragment key={id}>
 									<label key={id}><li className={!q.class ? "middle" : q.class}>
-									<input type="checkbox" name={id} id={id}
+									<input type="checkbox" name={id} id={id} 
 										checked={answers[id] === '1'}
-										onChange={(e) => onAnswerChange(id, e.target.checked ? '1' : '0')} 
+										onChange={(e) => onAnswerChange(id, e.target.checked ? '1' : '0', id)} 
 									/>{text}</li></label>
-									{a.textarea_name ? <textarea name={a.textarea_name} id={a.textarea_name} disabled={disableText(id, '1')} /> : null}
+									{a.textarea_name ? <textarea name={a.textarea_name} id={a.textarea_name} disabled={disableText(id, '1')} 
+									value={answers[a.textarea_name]} onChange={(e) => onTextChange(a.textarea_name ?? '', e.target.value)} /> : null}
 									</React.Fragment>
 								);
 							}

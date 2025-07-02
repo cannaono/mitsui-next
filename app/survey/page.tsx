@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Header from '../components/header';
 import Main from '../components/survey';
@@ -35,15 +35,35 @@ export default function SurveyPage() {
 	// Answers
 	const [answers, setAnswers] = useState<{ [key: string]: string }>({});
 	// Answer on Change
-	const onAnswerChange = (key: string, val: string) => {
+	const onAnswerChange = (key: string, val: string, id: string) => {
 		// Update answers
 		setAnswers((prev) => {
 			return { ...prev, [key]: val };
 		});
+		// Clear textarea
+		if(disableText(key, val)){
+			setAnswers((prev) => {
+				const textarea_name = `${id}t`;
+				if(textarea_name in prev){
+					alert(textarea_name);
+					return { ...prev, [textarea_name]: '' };
+				}
+				return prev;
+			});
+		}
 	};
 	// Enable/disable textarea
-	const disableText = (id: string, val: string) => {
-		return answers[id] === undefined || answers[id] !== val;
+	const disableText = (key: string, val: string) => {
+		const ret = answers[key] === undefined || answers[key] !== val;
+					alert(ret);
+		return ret;
+	};
+	// Textarea on Change
+	const onTextChange = (key: string, val: string) => {
+		// Update answers
+		setAnswers((prev) => {
+			return { ...prev, [key]: val };
+		});
 	};
 	// Check all quesions in a page are answered
 	const isAnswered= () => {
@@ -103,6 +123,7 @@ export default function SurveyPage() {
 				showQuestion={showQuestion}
 				onAnswerChange={onAnswerChange}
 				disableText={disableText}
+				onTextChange={onTextChange}
 			/>
 			</motion.div>
 			</AnimatePresence>
