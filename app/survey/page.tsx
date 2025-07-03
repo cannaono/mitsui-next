@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Header from '../components/header';
 import Main from '../components/survey';
@@ -34,28 +34,38 @@ export default function SurveyPage() {
 	
 	// Answers
 	const [answers, setAnswers] = useState<{ [key: string]: string }>({});
-	// Answer on Change
-	const onAnswerChange = (key: string, val: string, id: string) => {
+	// Radio on Change
+	const onRadioChange = (key: string, val: string) => {
 		// Update answers
 		setAnswers((prev) => {
-			return { ...prev, [key]: val };
-		});
-		// Clear textarea
-		if(disableText(key, val)){
-			setAnswers((prev) => {
-				const textarea_name = `${id}t`;
-				if(textarea_name in prev){
-					alert(textarea_name);
-					return { ...prev, [textarea_name]: '' };
+			const updated = { ...prev, [key]: val };
+			// Clear textarea
+			if(disableText(key, val)){
+				const textarea_name = `${key + '_' + prev[key]}t`;
+				if(textarea_name in updated && updated[textarea_name] !== ''){
+					updated[textarea_name] = '';
 				}
-				return prev;
-			});
-		}
+			}
+			return updated;
+		});
+	};
+	// Checkbox on Change
+	const onCheckboxChange = (key: string, val: string, textarea_name: string) => {
+		// Update answers
+		setAnswers((prev) => {
+			const updated = { ...prev, [key]: val };
+			// Clear textarea
+			if(textarea_name !== '' && disableText(key, val)){
+				if(textarea_name in updated && updated[textarea_name] !== ''){
+					updated[textarea_name] = '';
+				}
+			}
+			return updated;
+		});
 	};
 	// Enable/disable textarea
 	const disableText = (key: string, val: string) => {
 		const ret = answers[key] === undefined || answers[key] !== val;
-					alert(ret);
 		return ret;
 	};
 	// Textarea on Change
@@ -121,7 +131,8 @@ export default function SurveyPage() {
 				questions={currentQuestions}
 				answers={answers}
 				showQuestion={showQuestion}
-				onAnswerChange={onAnswerChange}
+				onRadioChange={onRadioChange}
+				onCheckboxChange={onCheckboxChange}
 				disableText={disableText}
 				onTextChange={onTextChange}
 			/>
